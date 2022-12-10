@@ -2,29 +2,49 @@
 public class Leluharjoitus {
 
 	public static void main(String[] args) {
-		// testiä
-
-	}
-	class Lelu1 {
-		String nimi;
-		int paino;
+		Lelu lelu = new Lelu("auto",5);
+		lelu.tulostin();
+		Lelu lelu1 = new Lelu("vieteriauto", 100);
+		lelu1.tulostin();
 		
-	public Lelu1() {
+	}
+}
+	class Lelu {
+		private String nimi;
+		private int paino;
+		
+	public Lelu() {
 		nimi = "";
 		paino = 0;
 	}
-	public Lelu1(String name, int weight) {
+	public Lelu(String name, int weight) {
 		nimi = name;
 		paino = weight;
 	}
-	void tulostin() {
+	 void tulostin() {
 		System.out.println(nimi);
 		System.out.println(paino);
 	}
-	void mustikkamehu() {
+	
+	}
+	class Vieteriauto extends Lelu {
+		
+		int nopeus;
+		
+	public Vieteriauto() {
+		
+		nopeus = 0;
 		
 	}
+	public Vieteriauto(int speed) {
+		nopeus = speed;
 	}
-	
+	void kiihdyta() {
+		nopeus++;
+	}
+	@Override
+	void tulostin() {
+		super.tulostin();
+	}
 
 }
