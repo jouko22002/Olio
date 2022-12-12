@@ -19,6 +19,8 @@ public class PacManApp {
 		Ghost ghost = new Ghost();
 		
 		ghost.syoPacman(pacman);
+		ghost.syoPacman(pacman);
+		ghost.syoPacman(pacman);
 		
 	}
 
@@ -43,6 +45,8 @@ class Pacman
     {
     	System.out.println("Pac-Man ate fruit");
     	eatenFruit.disappear();
+    	elamat++;
+    	System.out.println(elamat);
     }
     
     public void vahennaElama() 

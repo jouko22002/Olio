@@ -6,7 +6,6 @@ public class static_members {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-		
 		System.out.println("Calculate the area of a rectangle or a circle (r/c)");
 		String input = in.nextLine();
 		
@@ -28,7 +27,6 @@ public class static_members {
 		System.out.println(Laskuri.laskePintaAla(radius));
 		}
 	}
-
 }
 class Laskuri {
 		
